@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 
 # Global variable
-year_index = 29
+start_index = 29
 marker = "o"
 
 
@@ -15,7 +15,7 @@ def dataframe():
     # Read the data set into a variable called data_frame
     data_frame = pd.read_excel("Women in the House of Representatives.xlsx",)
     
-    years = data_frame["Years"][year_index:] 
+    years = data_frame["Years"][start_index:] 
     return data_frame, years
 
 
@@ -28,9 +28,9 @@ plt.figure(figsize=(14, 10))
 # Retrieve data for total number of women, 
 # women in the republican party,
 # women in the democratic party 
-total_women = dataframe["Women total"][year_index:]
-republican_women = dataframe["Republican"][year_index:]
-democratic_women = dataframe["Democratic"][year_index:] 
+total_women = dataframe["Women total"][start_index:]
+republican_women = dataframe["Republican"][start_index:]
+democratic_women = dataframe["Democratic"][start_index:] 
 
 # Marks the points for the the plot 
 plt.plot(years, total_women, label="Total Number of Women", marker=marker)
