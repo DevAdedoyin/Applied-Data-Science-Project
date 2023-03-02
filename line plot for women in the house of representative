@@ -1,0 +1,58 @@
+# -*- coding: utf-8 -*-
+
+# import modules
+import pandas as pd
+import matplotlib.pyplot as plt
+
+
+# Global variable
+year_index = 29
+marker = "o"
+
+
+# A function to read the dataset from the source file
+def dataframe():
+    # Read the data set into a variable called data_frame
+    data_frame = pd.read_excel("Women in the House of Representatives.xlsx",)
+    
+    years = data_frame["Years"][year_index:] 
+    return data_frame, years
+
+
+# Store return values of the function into variables 
+dataframe, years = dataframe()
+
+# Plots the graph in the background 
+plt.figure(figsize=(14, 10))
+
+# Retrieve data for total number of women, 
+# women in the republican party,
+# women in the democratic party 
+total_women = dataframe["Women total"][year_index:]
+republican_women = dataframe["Republican"][year_index:]
+democratic_women = dataframe["Democratic"][year_index:] 
+
+# Marks the points for the the plot 
+plt.plot(years, total_women, label="Total Number of Women", marker=marker)
+plt.plot(years, republican_women, label="Number of Republican", marker=marker)
+plt.plot(years, democratic_women, label="Number of Democratic", marker=marker)
+
+# Labels for the x and y axis
+plt.xlabel("Years")
+plt.ylabel("Number of Women")
+
+# Rotate the x-axis ticks for legibility
+plt.xticks(rotation=60)
+
+# Title for the plot
+plt.title("Women in the House of Representatives (1975 to 2019)", fontsize=20,
+          color="white", backgroundcolor='black', pad='15.0',)
+
+# Describes the elements of the plot
+plt.legend()
+
+# Saves the plot in jpg format
+plt.savefig("women in the house of rep.jpg")
+
+# Displays the plot
+plt.show()
