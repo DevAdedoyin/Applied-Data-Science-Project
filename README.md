@@ -1,1 +1,2 @@
-# Applied-Data-Science-Project
+![frequency of the categories of app](https://user-images.githubusercontent.com/59482569/222846649-dd67bede-8c34-4682-a698-eaf86465e683.jpg)![women in the house of rep](https://user-images.githubusercontent.com/59482569/222846659-9007a039-a681-4cac-b305-de4bc972eac0.jpg)
+![women of color in the congress](https://user-images.githubusercontent.com/59482569/222846661-629f3a11-e403-4c3a-ab10-18efda024150.jpg)
