@@ -1,4 +1,9 @@
 # -*- coding: utf-8 -*-
+"""
+Created on Fri Mar  3 16:22:33 2023
+
+@author: Adedoyin Idris
+"""
 
 # import modules
 import pandas as pd
@@ -51,7 +56,7 @@ plt.ylabel("Number of Women")
 plt.xticks(rotation=50)
 
 # Title for the plot
-plt.title("Women in the House of Representatives (1975 to 2019)", fontsize=20,
+plt.title("Women in the USA House of Representatives (1975 - 2019)", fontsize=20,
           color="white", backgroundcolor='black', pad='15.0',)
 
 # Describes the elements of the plot
