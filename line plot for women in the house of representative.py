@@ -56,7 +56,8 @@ plt.ylabel("Number of Women")
 plt.xticks(rotation=50)
 
 # Title for the plot
-plt.title("Women in the USA House of Representatives (1975 - 2019)", fontsize=20,
+plt.title("Women in the USA House of Representatives (1975 - 2019)", 
+          fontsize=20,
           color="white", backgroundcolor='black', pad='15.0',)
 
 # Describes the elements of the plot
