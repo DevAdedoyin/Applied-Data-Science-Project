@@ -38,7 +38,7 @@ new_data_frame = category_count.rename_axis('Category') \
                 .reset_index(name='Frequency')
 
 # Extract the 1st 33 rows of the new dataframe
-new_data_frame = new_data_frame[:33]
+new_data_frame = new_data_frame[:20]
 
 # Add the percentage frequency of each category to the new_data_frame
 # as a table
@@ -49,7 +49,7 @@ list_of_categories = list(new_data_frame.Category)
 list_of_frequency = list(new_data_frame.Frequency)
 
 # Create a new figure for the plot 
-plt.figure(figsize=(30, 25))
+plt.figure(figsize=(50, 48))
 
 # Create the plot for each category in the new_data_frame
 for category, frequency, color, count in zip(list_of_categories, 
@@ -65,26 +65,26 @@ for category, frequency, color, count in zip(list_of_categories,
                  y+height*1.01,
                  str(new_data_frame.Percentage[index])+'%',
                  ha='center',
-                 size=17,
+                 size=35,
                  rotation=45,
                  )
         index+=1
 
 # Title of the plot
 plt.title(
-    "The Frequency of Apps in each of the Categories" 
+    "The Frequency of Apps in 20 of the top Categories" 
     " in the Google Playstore (2018)",
-    fontsize=30, color="white", backgroundcolor='black', pad='15.0',)
+    fontsize=40, color="white", backgroundcolor='black', pad='15.0',)
 
 # x and y ticks of the plot.
-plt.xticks(fontsize=16, rotation=75)
-plt.yticks(fontsize=17)
+plt.xticks(fontsize=33, rotation=69)
+plt.yticks(fontsize=33)
 
 # Describes the elements of the plot
-plt.legend(fontsize=19)
+plt.legend(fontsize=30)
 
 # Saves the bar plot in jpg format
-plt.savefig("frequency of the categories of app.jpg")
+plt.savefig("frequency of the categories of app.jpg", dpi=300)
 
 # Displays the plot   
 plt.show()
