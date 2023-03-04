@@ -27,7 +27,7 @@ ethnicity_count = congress_women_data_frame["Ethnicity"].value_counts()
 
 # Wedge properties for the pie plot
 wedge_property = {'linewidth':2, 'edgecolor':"black"}
- 
+
 # Create a new figure for the pie plot 
 fig, ax = plt.subplots(figsize=(16, 13))
 
