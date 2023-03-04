@@ -49,8 +49,8 @@ for number_of_women_, labels_ in zip(number_of_women, labels):
     plt.plot(years, number_of_women_, label=labels_, marker=marker)
 
 # Labels for the x and y axis
-plt.xlabel("Years")
-plt.ylabel("Number of Women")
+plt.xlabel("Years", fontsize=16)
+plt.ylabel("Number of Women", fontsize=16)
 
 # Rotate the x-axis ticks for legibility
 plt.xticks(rotation=50)
@@ -64,7 +64,7 @@ plt.title("Women in the USA House of Representatives (1975 - 2019)",
 plt.legend()
 
 # Saves the plot in jpg format
-plt.savefig("women in the house of rep.jpg")
+plt.savefig("women in the house of rep.jpg", dpi=300)
 
 # Displays the plot
 plt.show()
