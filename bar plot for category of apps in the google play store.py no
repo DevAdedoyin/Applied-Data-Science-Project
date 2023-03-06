@@ -37,7 +37,7 @@ category_count = dataframe["Category"].value_counts()
 new_data_frame = category_count.rename_axis('Category') \
                 .reset_index(name='Frequency')
 
-# Extract the 1st 33 rows of the new dataframe
+# Extract the 1st 20 rows of the new dataframe
 new_data_frame = new_data_frame[:20]
 
 # Add the percentage frequency of each category to the new_data_frame
@@ -68,7 +68,7 @@ for category, frequency, color, count in zip(list_of_categories,
                  size=35,
                  rotation=45,
                  )
-        index+=1
+        index += 1
 
 # Title of the plot
 plt.title(
