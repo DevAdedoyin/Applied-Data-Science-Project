@@ -44,8 +44,8 @@ Pie plots are good for data size comparison. They show the relativity between a 
 The pie plot shows that there are more African American women compared to women of another ethnicity in the USA congress. Between the year 1965 to 2017 the USA congress only have 1.5% of women who are of combined ethnicity.The pie plot also shows that between the year 1965 to 2017 the USA congress have more women of Hispanic American ethnicity than women whore Asian-Pacific
 American.
 
-#Credits
-#Please, if you are going to use any part of this write-up or project, make sure you give credit to Adedoyin Idris.
+# Credits
+# Please, if you are going to use any part of this write-up or project, make sure you give credit to Adedoyin Idris.
 
 Thanks.
 Kind Regards.
